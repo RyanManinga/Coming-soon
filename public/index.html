@@ -194,13 +194,13 @@
                     <h2>Reach Out</h2>
                     <p class="contacts-desc">I am always open to new challenges and opportunities. Whether you have a project in mind or just want to connect, drop me a message.</p>
            
-                    <form id="contact-form">
+                    <form action="/submit-contact" id="contact-form" method="post" data-netlify="true" name="contact">
                         <div>
                           <input class="input-item" type="text" name="name" placeholder="Name" required>
                         </div>
                         
                         <div>
-                          <input class="input-item" type="tel" name="phone" placeholder="Phone" required>
+                          <input class="input-item" type="text" name="phone" placeholder="Phone" required>
                         </div>
                         
                         <div>
@@ -219,6 +219,7 @@
                           <button id="btn-submit" type="submit">Submit Now</button>
                         </div>
                       </form>
+                      
                         
                       
                 </div>
