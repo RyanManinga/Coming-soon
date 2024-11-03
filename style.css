@@ -11,7 +11,7 @@ header {
 
 header::after {
     content: " ";
-    background-image: url('https://i.imgur.com/5xAkZg9.jpg');
+    background-image: url('/images/_DSC1002.jpg');
     background-position: left;
     background-size: cover;
     position: absolute;
