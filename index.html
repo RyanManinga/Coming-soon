@@ -20,10 +20,10 @@
             <img src="https://mobirise.com/extensions/organicamp/assets/images/logo1.jpg" id="logo" alt="Main logo">
             <div>
                 <ul id="top-menu">
-                    <li class="menu-item"><a href="https://medium.com/@ryan.maninga" target="_blank">Articles</a></li>
+                    <li class="menu-item"><a href="https://medium.com/@ryan.maninga" rel="noopener noreferrer" target="_blank">Articles</a></li>
                     <li class="menu-item"><a href="#store">Projects</a></li>
-                    <li class="menu-item"><a href="https://open.spotify.com/user/e0pmnrs5huo1v099iduwbcldf?si=e6aa91f49154423b" target="_blank">Spotify</a></li> 
-                    <li class="menu-item"><a href="https://www.linkedin.com/in/ryan-maninga-8073811a4/" target="_blank">LinkedIn</a></li>
+                    <li class="menu-item"><a href="https://open.spotify.com/user/e0pmnrs5huo1v099iduwbcldf?si=e6aa91f49154423b" rel="noopener noreferrer" target="_blank">Spotify</a></li> 
+                    <li class="menu-item"><a href="https://www.linkedin.com/in/ryan-maninga-8073811a4/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
                     <li class="menu-item"><a href="#contact-me-form">Contact me</a></li>
                 </ul>
             </div>
@@ -88,11 +88,11 @@
             <div id="store-items">
                 <article>
                     <div>
-                        <a href="/ndoto.html" target="_blank"> <i class="fa fa-camera"></i></a>
+                        <a href="/ndoto.html"  target="_blank"> <i class="fa fa-camera"></i></a>
                         
                     </div>
                     <h3>Ndoto Community Hub in Laikipia</h3>
-                    <a href="/ndoto.html" target="_blank"><p>Click me :)</p></a>
+                    <a href="/ndoto.html" rel="noopener noreferrer" target="_blank"><p>Click me :)</p></a>
                 </article>
                 
                 <article>
@@ -197,28 +197,29 @@
                     <h2>Reach Out</h2>
                     <p class="contacts-desc">I am always open to new challenges and opportunities. Whether you have a project in mind or just want to connect, drop me a message.</p>
            
-                    <form action="/" id="myForm" method="post">
-
+                    <form name="contact" netlify></form>
+                        <input type="hidden" name="form-name" value="your-form-name">
+                      
                         <div>
                           <input class="input-item" type="text" name="name" placeholder="Name" required>
                         </div>
-                        
+                      
                         <div>
                           <input class="input-item" type="text" name="phone" placeholder="Phone" required>
                         </div>
-                        
+                      
                         <div>
                           <input class="input-item" type="text" name="subject" placeholder="Subject" required>
                         </div>
-                        
+                      
                         <div>
                           <input class="input-item" type="email" name="email" placeholder="Email" required>
                         </div>
-                        
+                      
                         <div>
                           <textarea class="input-item" name="message" placeholder="Message" required></textarea>
                         </div>
-                        
+                      
                         <div>
                           <button id="btn-submit" type="submit">Submit Now</button>
                         </div>
