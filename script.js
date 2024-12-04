@@ -32,4 +32,23 @@ document.addEventListener('keydown', function(e) {
     }, 1000);
 })();
 
+// Disable right-click on images
+document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+  
+  // Disable dragging images
+  document.addEventListener('dragstart', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
 
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
+      e.preventDefault();
+      alert('Saving this webpage is disabled.'); 
+    }
+  });
